@@ -7,7 +7,20 @@ mesmo que os resultados sejam iguais. Caso o delta seja negativo, retorne, ao in
 */
 
 function bhaskara(a, b , c) {
-  let delta = (Math.pow(b, 2)) - (4 * a * c)
-  const doiasA =  2 * a
-  -b  Math.sqrt(delta)
+  const delta = (Math.pow(b, 2)) - (4 * a * c)
+  const doisA =  2 * a
+  const x1 = ((b * -1) + (Math.sqrt(delta))) / doisA
+  const x2 = ((b * -1) - (Math.sqrt(delta))) / doisA
+  if (delta >= 0) {
+    return [
+      x1,
+      x2
+    ]
+  } else {
+    return "Delta é negativo"
+  }
 }
+
+console.log(bhaskara(3, -5 , 12))
+
+console.log(bhaskara(1, 12 , -13))
