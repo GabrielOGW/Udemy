@@ -5,3 +5,9 @@ Seu programa deve mostrar apenas as notas utilizadas. Por exemplo, ao solicitar 
 informar apenas a seguinte informação (note que não foram exibidas informações sobre as demais cédulas): 1
 nota(s) de R$ 10. 1 nota(s) de R$ 5. 3 nota(s) de R$ 1
  */
+function notas(valor) {
+  
+}
+
+console.log(notas(200))
+console.log(notas(18))
